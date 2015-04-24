@@ -6,4 +6,4 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 
 from app import views
-from app.models import usermodel,edumodel,skillmodel,project_skillmodel,projectmodel,socialmodel,miscmodel,preflocmodel,jobprefmodel
+from app.models import usermodel

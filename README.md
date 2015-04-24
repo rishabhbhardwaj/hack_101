@@ -7,7 +7,7 @@ Installation Steps..
 3)Install Backend dependencies with : `pip install -r requirements.txt` [NO SUDO!!]
 
 ###Installing Dependencies
-1. Install npm with: `sudo npm install`
+1. Install npm
 2. Run: `npm install`
 3. Install Bower with: npm install -g bower
 4. Bower: `bower install`
