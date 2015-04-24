@@ -1,0 +1,22 @@
+{
+  "name": "Hack101",
+  "version": "0.1.0",
+  "authors": [
+    "Tushar Agarwal <niftytushar@gmail.com>"
+  ],
+  "description": "A hiring marketplace",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "backbone": "~1.1.2",
+    "foundation": "~5.5.0"
+  }
+}

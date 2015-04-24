@@ -1,0 +1,34 @@
+{
+  "name": "hack101",
+  "version": "0.1.0",
+  "description": "Saturday Hack",
+  "main": "html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmittal01/hack_101.git"
+  },
+  "author": "Tushar Agarwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmittal01/hack_101/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^0.18.1",
+    "node-sass": "~1.2.3"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "font-awesome": "^4.2.0",
+    "foundation": "^4.2.1-1",
+    "grunt": "^0.4.5",
+    "jquery": "^2.1.3",
+    "requirejs": "^2.1.15",
+    "requirejs-text": "^2.0.12",
+    "underscore": "^1.7.0"
+  }
+}

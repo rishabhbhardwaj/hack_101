@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/home/kmittal/workspace/hyrenow/env_1/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 169, in run
+    self.manage_workers()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 542, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Traceback (most recent call last):
+  File "/home/kmittal/workspace/hyrenow/env_1/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 169, in run
+    self.manage_workers()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 542, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/home/kmittal/workspace/hyrenow/env_1/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>

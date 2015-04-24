@@ -1,0 +1,508 @@
+<script type="text/templates" id="user_profile_base">
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="container">
+    <div id="header_wrapper">
+    </div>
+    
+    <div class="main-container">
+	    <div class="user-cover">
+	    	<div class="row user-cover-main">
+	    		<div class="large-3 medium-3 small-3 columns">
+		    		<div class="user-cover-pic">
+		    			<span class="user-cover-letter">K</span>
+		    		</div>
+		    		<div class="upload-photo">
+		    			<span>UPLOAD PHOTO</span>
+		    		</div>
+		    	</div>
+	    		<div class="user-cover-details large-9 medium-9 small-9 columns">
+	    			<span class="user-cover-name">Kshitij Mittal</span>
+	    			<div id="saved-onelnr-wrapper">
+		    			<span class="user-cover-onelnr" data-type="default-text" id="saved-onelnr">Describe Yourself..</span>
+		    			<div class="h-line">
+		    			</div>
+	    			</div>
+	    			<div id="editable-onelnr" class="editable-onelnr">
+	    			</div>
+	    		</div>
+	 	   	</div>
+
+	    </div>
+	        
+	    <div class="user-profile-edit-container">
+	    <div class="row">
+	    	<div class="user-profile-edit-wrapper large-8 columns">
+		    	<div class="row profile-card">
+		    		<div class="columns large-12 heading">
+		    			<span>Job Preference</span>
+		    		</div>
+		    		<div class="columns large-12 heading">
+		    			<div class="content">
+		    				<form id="job_pref_form">
+			    			<div class="row">
+				    			<div class="large-4 columns">
+					                    <span class="field-label">Current Location</span>
+			                    </div>
+				    			<div class="large-8 columns">
+					             	<input type="text" class="hynow-input" id="current_location_box" placeholder="Bangalore"/>
+					                <span class="validation-error"></span>
+			                    </div>
+			    			</div>
+			    			<div class="row">
+				    			<div class="large-4  columns">
+					                    <span class="field-label">Desired Location</span>
+			                    </div>
+				    			<div class="large-8  columns">
+				                    <input type="text" class="hynow-input" id="desired_location_box" placeholder="Bangalore"/>
+					                <span class="validation-error"></span>
+
+			                    </div>
+			    			</div>
+
+			    			<div class="row">
+			                    <div class="large-4 columns">
+					                    <span class="field-label">Current Salary</span>
+			                    </div>
+			                  	<div class="large-8 columns">
+					                    <input type="text" class="hynow-input" id="" placeholder="10,000"/>
+					                	<span class="validation-error"></span>
+			                    </div>
+			    			</div>
+			    			<div class="row">
+			    				<div class="large-4 columns">
+					                    <span class="field-label">Expected Salary</span>
+			                    </div>
+			                    <div class="large-8 columns">
+					                    <input type="text" class="hynow-input" id="" placeholder="10,000"/>
+					                	<span class="validation-error"></span>
+			                    </div>
+			    			</div>
+		                    <div class="form-sep"></div>
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius"><span>Cancel</span></button>
+	                        </div>
+	                		</form>
+	                	</div>
+		    		</div>
+		    	</div>
+		    	<div class="row profile-card">
+		    		<div class="columns large-12 heading">
+		    			<span>Work Experience</span>
+		    		</div>
+		    		<div class="columns large-12 heading">
+		    			<div class="content">
+		    				
+		    				<div class="" id="work-saved">
+		    				</div>
+		    				<div class = "add-form-button" id = "add-form-button">
+		    				</div>
+	                	</div>
+		    		</div>
+		    	</div>
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Work Experience</span>
+		    			<div class="add-form-button" id="add-form-button">
+			    			<span class="plus-sign"><i class="fa fa-plus"></i></span>
+			    			<span class="add-text">Add</span>
+		    			</div>
+		    		</div>
+		    		<div class="content">
+
+		    			<form id="work-form" class="displaynone">
+			    			<div class="large-12 columns">
+				    			<div class="row">
+				                    <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="work-company" placeholder="Company" />
+				                    </div>
+				                    <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="work-designation" placeholder="Designation" />
+				                    </div>
+				    			</div>
+				    			<div class="row">
+				                    <div class="large-12 columns">
+				                    	<textarea placeholder="What did you do there?" id="work-description" class="hynow-desc-input"/>
+				                    </div>
+				    			</div>
+			    			</div>
+
+		                    <div class="large-6 medium-12 small-12 columns" id="duration-from">
+
+			                    <span class="input-label"> From </span> 
+								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+									<option>January</option>
+								</select>
+								<select type="text" class="hynow-dropdown year" data-type="year-dropdown">
+								</select>
+							</div>
+							<div class="large-6	 medium-12 small-12 columns end" id="duration-to">
+
+			                    <span class="input-label"> To </span> 
+								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+								</select>
+								<select type="text" class="hynow-dropdown year" data-type="year-dropdown" >
+								</select>
+							</div>
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled" id="cancel-form"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Education</span>
+		    			<div class="add-form-button" id="add-form-button">
+			    			<span class="plus-sign"><i class="fa fa-plus"></i></span>
+			    			<span class="add-text">Add</span>
+		    			</div>
+		    		</div>
+		    		<div class="content">
+		    				<div class="" id="edu-saved">
+			    			</div>
+
+		    			<form id="edu-form" class="displaynone">
+		    			<div class="large-12 columns">
+							<div class="row">
+						        <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="edu-college" placeholder="Institute" />
+						        </div>
+						        <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="edu-course" placeholder="Course" />
+						        </div>
+							</div>
+
+							<div class="row">
+						        <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="edu-location" placeholder="Location" />
+						        </div>
+						        <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="edu-field" placeholder="Field of Study" />
+						        </div>
+							</div>
+
+							<div class="row">
+			                    <div class="large-12 columns">
+			                    	<textarea placeholder="What did you do there?" class="hynow-desc-input" id="edu-description"/>
+			                    </div>
+							</div>
+
+						</div>
+
+							<div class="large-6	 medium-12 small-12 columns" id="duration-from">
+
+			                    <span class="input-label"> From </span> 
+								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+									<option>January</option>
+								</select>
+								<select type="text" class="hynow-dropdown year" data-type="year-dropdown" >
+								</select>
+							</div>
+							<div class="large-6	 medium-12 small-12 columns end" id="duration-to">
+
+			                    <span class="input-label"> To </span> 
+								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+								</select>
+								<select type="text" class="hynow-dropdown year" data-type="year-dropdown">
+								</select>
+							</div>
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled" id="cancel-form"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Skills</span>
+		    		</div>
+		    		<div class="content">
+		    			<form id="skill_form">
+
+			    			<div class="large-12 columns">
+			    				<div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="skill_box" placeholder="Add a Skill" />
+		                    	</div>
+		                    </div>
+
+		                    <div class="tag-wrapper">
+		                    	<div class="tag"><span>Python </span><i class="fa fa-close"></i></div>
+		                    	<div class="tag"><span>Javascript </span><i class="fa fa-close"></i></div>
+		                    	<div class="tag"><span>Python </span><i class="fa fa-close"></i></div>
+		                    	<div class="tag"><span>Javascript </span><i class="fa fa-close"></i></div>
+		                    </div>
+
+		                
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+
+	                </form>
+		    		</div>
+		    	</div>
+
+  				<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Projects</span>
+		    			<div class="add-form-button" id="add-form-button">
+			    			<span class="plus-sign"><i class="fa fa-plus"></i></span>
+			    			<span class="add-text">Add</span>
+		    			</div>
+		    		</div>
+		    		<div class="content">
+							<div class="" id="project-saved-wrapper">
+			    				<div class="large-12 columns project-saved">
+			    				</div>
+			    			</div>
+
+		    			<form id="project-form" class="displaynone">
+
+		    				<div class="large-12 columns">
+								<div class="row">
+								    <div class="large-6 columns">
+			                    		<input type="text" class="hynow-input" id="project-name" placeholder="Project Name" />
+								    </div>
+								    <div class="large-6 columns">
+			                    		<input type="text" class="hynow-input" id="project-link" placeholder="URL" />
+								    </div>
+								</div>
+								<div class="row">
+				                    <div class="large-12 columns">
+				                    	<textarea placeholder="Description" class="hynow-desc-input" id="project-description"/>
+				                    </div>
+								</div>
+								<div class="large-6	 medium-12 small-12 columns" id="duration-from">
+			                    	<span class="input-label"> From </span> 
+									<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+									<option>January</option>
+									</select>
+									<select type="text" class="hynow-dropdown year" data-type="year-dropdown" >
+									</select>
+								</div>
+								<div class="large-6	 medium-12 small-12 columns end" id="duration-to">
+			                    	<span class="input-label"> To </span> 
+									<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+									</select>
+									<select type="text" class="hynow-dropdown year" data-type="year-dropdown">
+									</select>
+								</div>
+								
+							</div>
+		    			
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled" id="cancel-form"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+				<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Personal</span>
+		    		</div>
+		    		<div class="content">
+		    			<form id="personal-form" class="personal-form">
+			    			<div class="large-6 columns">
+			                    <div class="large-4 columns">
+			                    	<span class="input-label">Phone No.</span> 
+			                    </div>
+			                    <div class="large-8 columns">
+			                    	<input type="text" class="hynow-input" id="" placeholder="Phone No." />
+			                    </div>
+		                    </div>
+		                    
+		                    <div class="large-6 columns">
+			                    <div class="large-3 columns">
+			                    	<span class="input-label"> DOB </span> 
+			                    </div>
+			                    <div class="large-9 columns">
+			                    	<select type="text" class="hynow-dropdown day" data-type="day-dropdown">
+			                    	</select>
+			                    	<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+			                    	</select>
+			                    	<select type="text" class="hynow-dropdown year" data-type="year-dropdown">
+			                    	</select>
+			                    </div>
+		                    </div>
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                	</form>
+		    		</div>
+		    	</div>
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Social Links</span>
+		    		</div>
+		    		<div class="content">
+		    			<form id="">
+		    			<div class="large-12 columns">
+							<div class="row">
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon facebook">
+					                    	<i class="fa fa-facebook-square"></i>
+					                    </div>
+					                    <div class="social-link">
+					                    	<input type="text" class="hynow-input" placeholder="Link to Facebook Profile" />
+					                    </div>
+				                    </div>
+							    </div>
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon">
+					                    	<i class="fa fa-github-square"></i>
+					                    </div>
+					                    <div class="social-link">
+						                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to GitHub Profile" />
+				                    	</div>
+			                    	</div>
+							    </div>
+							</div>
+							<div class="row">
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon twitter">
+					                    	<i class="fa fa-twitter-square"></i>
+					                    </div>
+					                    <div class="social-link">
+					                    	<input type="text" class="hynow-input" placeholder="Link to Twitter Profile" />
+					                    </div>
+				                    </div>
+							    </div>
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon">
+					                    	<i class="fa fa-linkedin-square"></i>
+					                    </div>
+					                    <div class="social-link">
+						                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to LinkedIn Profile" />
+				                    	</div>
+			                    	</div>
+							    </div>
+							</div>
+						</div>
+
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+	    	</div>
+	    	<div class="user-sidebar-wrapper large-4 columns">
+		    	<div class="row sidebar-card">
+		    		<div class="columns large-12 heading">
+		    			<span class="">Profile Strength	</span>
+		    		</div>
+		    		<div class="columns large-12 completeness-wrapper">
+			    		<div class="percent-complete"><span class="digit">92</span><span class="symbol">%</span></div>
+			    		<div class="completeness-bar">
+			    			<div class="percent-complete-bar"></div>
+			    		</div>
+		    			<div class="profile-status-desc">
+		    			<span>Congratulations, your profile can now be submitted for review.</span>
+		    			</div>
+		    			<div class="review-button">
+		    				<button class="tiny"><span>Submit For Review</span></button>
+		    			</div>
+		    		</div>
+	    		</div>
+	    		<div class="row sidebar-card">
+		    		<div class="columns large-12 heading">
+		    			<span class="">Quick Tips</span>
+		    		</div>
+		    		<div class="columns large-12 tip-wrapper">
+		    			<div class="tip-desc"><span>Import Data From LinkedIn to speed up profile completeness</span></div>
+		    			<div class="tip-button">
+		    				<button class="tiny primary">CONNECT WITH LINKEDIN</button>
+		    			</div>
+		    		</div>
+
+		    		<div class="columns large-12 tip-wrapper">
+		    			<div class="tip-desc"><span>Refer friends to get a verified badge on your profile.</span></div>
+		    			<div class="tip-button">
+		    				<button class="tiny primary">Refer Now</button>
+		    			</div>
+		    		</div>
+
+	    		</div>
+	    	</div>
+	    </div>
+	    </div>
+    </div>
+</div>
+</script>
+
+<script type="text/template" id="editOnelnrElement">
+<input name="temp" type="text" id="onelnr-input"/>
+<div class="desc-words columns large-3" id="desc-words">
+	<span class="desc-words-written" id="desc-words-written">0</span>
+	<span class="desc-words-total">/140</span>
+</div>
+<div class="desc-save large-9 columns">
+    <button type="submit" class="tiny radius disabled" id="desc-save"><span>Save</span></button>
+    <button class="tiny secondary radius disabled" id="desc-cancel"><span>Cancel</span></button>
+</div>
+</script>
+
+<script type="text/template" id="eduElement">
+<div class="large-6 medium-6 small-6 columns year-details">
+	<div class="year-range"><%= from_year%> - <%=to_year%></div>
+	<div class="duration"> <%=to_year-from_year.toString()%> years</div>
+</div>
+<div class="large-6 medium-6 small-6 columns other-details">
+	<div class="organization"><%= college%> , <%= location%></div>
+	<div class="domain"><%=field%></div>
+	<div class="description"><%= description %></div>
+</div>
+</script>
+
+<script type="text/template" id="workElement">
+<div class="row">
+	<div class="large-6 medium-6 small-6 columns year-details">
+		<div class="year-range"><%= from_year%> - <%=to_year%></div>
+		<div class="duration"><%=to_year-from_year.toString()%> years</div>
+	</div>
+	<div class="large-6 medium-6 small-6 columns other-details">
+		<div class="organization"><%= company%></div>
+		<div class="domain"><%= designation%></div>
+		<div class="description"><%= description%></div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="projectElement">
+
+<div class="row">
+	<div class="large-6 medium-6 small-6 columns project-name">
+		<%=name%>
+	</div>
+	<div class="large-6 medium-6 small-6 columns year-details">
+			<%=from_month%>, <%=from_year%> - <%=to_month%>, <%=to_year%>
+	</div>
+	<div class="large-12 columns link">
+		<%= link %>
+	</div>
+	<div class="large-12 columns description">
+	<%= description %>
+	</div>
+</div>
+
+</script>
+

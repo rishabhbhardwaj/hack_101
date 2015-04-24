@@ -1,0 +1,322 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"request"
+			],
+			[
+				"sign-up",
+				"sign-up-manual"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"log",
+				"login_base"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"mr",
+				"margin-top"
+			],
+			[
+				"m",
+				"margin-left"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"tabe",
+				"table-cell"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bac",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/kmittal/kush/ahmed_feb/problem_1.py",
+		"/home/kmittal/kush/ahmed_feb/problem_1",
+		"/home/kmittal/workspace/hyrenow/db_downgrade.py",
+		"/home/kmittal/workspace/hyrenow/db/db_downgrade.py",
+		"/home/kmittal/workspace/hyrenow/db/db_create.py",
+		"/home/kmittal/workspace/hyrenow/frontend/bower_components/foundation/js/foundation.js",
+		"/home/kmittal/workspace/bhabhi/kuchhbhi.html",
+		"/home/kmittal/workspace/hyrenow/frontend/bower.json",
+		"/home/kmittal/workspace/hyrenow/frontend/bower_components/foundation/js/foundation/foundation.abide.js",
+		"/home/kmittal/workspace/hyrenow/frontend/bower_components/foundation/css/foundation.css",
+		"/home/kmittal/workspace/hyrenow/env_1/lib/python2.7/site-packages/flask_openid.py",
+		"/home/kmittal/workspace/hyrenow/app/forms.py",
+		"/home/kmittal/workspace/hyrenow/logs/access.log",
+		"/home/kmittal/workspace/hyrenow/frontend/assets/css/app.css",
+		"/home/kmittal/workspace/hyrenow/frontend/main.js",
+		"/home/kmittal/workspace/hyrenow/frontend/index.html",
+		"/home/kmittal/workspace/hyrenow/frontend/app/templates/login.html",
+		"/home/kmittal/workspace/hyrenow/frontend/login.html",
+		"/home/kmittal/workspace/hyrenow/frontend/assets/scss/app.scss",
+		"/home/kmittal/workspace/hyrenow/frontend/assets/scss/_custom.scss",
+		"/home/kmittal/workspace/hyrenow/frontend/bower_components/foundation/scss/foundation/_settings.scss",
+		"/home/kmittal/workspace/hyrenow/env_1/lib/python2.7/encodings/string_escape.py",
+		"/home/kmittal/workspace/hyrenow/env_1/bin/sqlformat",
+		"/home/kmittal/workspace/hyrenow/env_1/include/python2.7/symtable.h",
+		"/home/kmittal/workspace/hyrenow/env_1/include/python2.7/sysmodule.h",
+		"/home/kmittal/workspace/hyrenow/env_1/lib/python2.7/site-packages/whoosh/system.py",
+		"/home/kmittal/workspace/hyrenow/frontend/bower_components/foundation/scss/foundation.scss",
+		"/home/kmittal/workspace/hyrenow/env_1/include/python2.7/setobject.h",
+		"/home/kmittal/workspace/hyrenow/frontend/assets/scss/reset.scss",
+		"/home/kmittal/workspace/hyrenow/app/views.py",
+		"/home/kmittal/workspace/hyrenow/logs/supervisor_logs",
+		"/home/kmittal/workspace/hyrenow/logs/error.log",
+		"/home/kmittal/workspace/hyrenow/frontend/app/model/testModel.js",
+		"/home/kmittal/workspace/hyrenow/html/index.html",
+		"/home/kmittal/workspace/hyrenow/run.py",
+		"/home/kmittal/workspace/hyrenow/app/__init__.py",
+		"/home/kmittal/workspace/hyrenow/requirements.txt",
+		"/home/kmittal/workspace/hyrenow/package.json",
+		"/home/kmittal/workspace/microblog/app/views.py",
+		"/home/kmittal/workspace/microblog/app/__init__.py",
+		"/home/kmittal/workspace/microblog/db_migrate.py",
+		"/home/kmittal/workspace/microblog/config.py",
+		"/home/kmittal/workspace/microblog/app/postmodel.py",
+		"/home/kmittal/workspace/microblog/app/models.py",
+		"/home/kmittal/workspace/microblog/app/models/models.py",
+		"/home/kmittal/workspace/hyrenow/app/templates/base.html",
+		"/home/kmittal/workspace/hyrenow/db_create.py",
+		"/home/kmittal/workspace/hyrenow/db_upgrade.py",
+		"/home/kmittal/workspace/hyrenow/db_migrate.py",
+		"/home/kmittal/workspace/hyrenow/app/models.py",
+		"/home/kmittal/workspace/hyrenow/app/templates/login.html",
+		"/home/kmittal/workspace/hyrenow/config.py",
+		"/home/kmittal/workspace/microblog/app/templates/base.html",
+		"/home/kmittal/workspace/microblog/app/templates/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sign-up-manual",
+			";\n",
+			"\";\n",
+			"button",
+			"backgro",
+			"hyrenow"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/kmittal/kush/ahmed_feb"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"bower",
+				"frontend/bower.json"
+			],
+			[
+				"founda",
+				"frontend/bower_components/foundation/js/foundation.js"
+			],
+			[
+				"setting",
+				"frontend/bower_components/foundation/scss/foundation/_settings.scss"
+			],
+			[
+				"sett",
+				"frontend/bower_components/foundation/scss/foundation/_settings.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/hyrenow.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
