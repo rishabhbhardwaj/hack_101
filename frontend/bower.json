@@ -2,9 +2,9 @@
   "name": "Hack101",
   "version": "0.1.0",
   "authors": [
-    "Tushar Agarwal <niftytushar@gmail.com>"
+    "Kshitij Mittal"
   ],
-  "description": "A hiring marketplace",
+  "description": "hacking saturday",
   "license": "MIT",
   "private": true,
   "ignore": [
