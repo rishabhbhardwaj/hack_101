@@ -6,4 +6,4 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 
 from app import views
-from app.models import users
+from app.models import users, Property, PropertyScore, SurveyQuestions, UserResponse, Agent, TrendEvents, TrendScore

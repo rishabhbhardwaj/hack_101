@@ -1,6 +1,6 @@
 from flask import render_template, flash, redirect,jsonify,request,session
 from app import app,db
-from models.usermodel import User
+from models.users import Users
 @app.route('/')
 @app.route('/index')
 def index():
@@ -16,7 +16,7 @@ def login():
 	email=request.json['email']
 	password=request.json['password']
 	
-	u = User(name=name,
+	u = Users(name=name,
  	        email=email,
  	        password=password)
 
