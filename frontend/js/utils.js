@@ -11,6 +11,9 @@ require(
 		utilsPrototype.ajax = function(obj) {
 			data= obj.request_data;
 			url=obj.url;
+			if (obj.callback){
+				callback = obj.callback;
+			}
 			if(obj.type){
 				type = obj.type;
 			}
@@ -29,8 +32,13 @@ require(
 					type: type,
 					contentType: 'application/json;charset=UTF-8',
 					success: function(msg){
-						console.log(msg);
-					}
+						if (callback){
+							callback(msg);
+						}
+						else{
+							console.log(msg);	
+						}
+					},
 				})			
 			}
 			else {
@@ -40,8 +48,10 @@ require(
 					data: JSON.stringify(data, null, '\t'),
 					contentType: 'application/json;charset=UTF-8',
 					success: function(msg){
-						console.log(msg);
-					}
+						if (callback) {
+						callback(msg)
+						}
+					},
 				})
 			}
 		}

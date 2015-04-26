@@ -1,0 +1,103 @@
+<script type="text/templates" id="searchresults_base">
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="container">
+    <div class="row main-container">
+    	
+        
+    	
+          <div class="large-3 columns property-wrapper" id="left-listings">
+               <div>
+                    <span class="prop-heading">Property Listings</span>
+               </div>
+               <div id="property-listings">
+                    
+               </div> 
+         </div>
+         <div class="large-6 columns" id="map-canvas">
+                <div id="property-listing-expanded">
+                <span></span>
+            </div>
+        </div>
+            <div class="large-3 columns">
+               <div class="survey-heading">
+                    <span>Survey Questions</span>
+                </div>
+                <div id="survey-listings">
+                    
+               </div> 
+         </div>
+    </div>
+
+    <div class="default-footer">
+        <div class="footer-border"></div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">© 2105 Hack101</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="propElement">
+
+<div class="single-prop" prop-id=<%=id%>>
+    <i class="fa fa-heart shortlist"></i>
+    <div class="loc_area">
+            <span class="location"><%=location%></span>,<span class="area"><%=area%> sqft</span>
+    </div>
+    <div class="price_roi">
+        <span class="price">&#8377;<%= price/100 %> Lacs</span><span class="roi">(ROI - <%=roi%> p.a.)</span>
+    </div>
+</div>
+</script>
+<script type="text/template" id="expropElement">
+<div class="single-prop-expanded" prop-id=<%=id%>>
+    <div class="loc_area">
+            <span class="location"><%=location%></span>,<span class="area"><%=area%> sqft</span>
+    </div>
+    <div class="builder-rating">
+        <span>Builder Rating: <%=builder_rating%></span>
+    </div>
+    <div class="price_roi">
+        <span class="price">&#8377;<%= price/100 %> Lacs</span><span class="roi">(ROI - <%=roi%> p.a.)</span>
+    </div>
+    <br />
+    <div class="checks">
+        <span class="negotiable"><%if (negotiable){%><i class="fa fa-check-square-o"></i><%} else {%><i class="fa fa-times-circle"></i><%}%> Negotiable</span><span class="commercial"><%if (commercial){%><i class="fa fa-check-square-o"></i><%} else {%><i class="fa fa-times-circle"></i><%}%>Commercial</span>
+    </div>
+</div>
+</script>
+
+<script type="text/template" id="surveyElement">
+
+<div class="single-ques" survey-id=<%=id%>>
+    <form data-abide id="survey-question-form">
+        <div class="question">
+            <%=question%>
+        </div>
+        <div class="option" opt-id=1>
+          <input type="radio" name="option" value="<%=option_one%>"> <label for="<%=option_one%>"><%=option_one%></label>
+        </div>
+         <div class="option" opt-id=2>
+           <input type="radio" name="option" value="<%=option_two%>"><label for="<%=option_two%>"><%=option_two%></label>
+        </div>
+        <div class="option" opt-id=3>
+           <input type="radio" name="option" value="<%=option_three%>"><label for="<%=option_three%>"><%=option_three%></label>
+        </div>
+        <div class="option" opt-id=4>
+           <input type="radio" name="option" value="<%=option_four%>"> <label for="<%=option_four%>"><%=option_four%></label>
+        </div>
+        <button type="submit" id="next" class="tiny"><span>Next</span></button>
+        <button id="skip" class="tiny"><span>Skip</span></button>
+    </form>
+
+</div>
+
+</script>
